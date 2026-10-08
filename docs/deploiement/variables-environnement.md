@@ -141,6 +141,7 @@ Tout ce bloc n’est lu que si `PROCONNECT_ACTIVATED` vaut `True`.
 | `WAGTAILADMIN_PATH` | Adresse de la page d’administration. | `cms-admin/` | ⚪ |
 | `SF_DISABLE_TUTORIALS` | Masque le panneau de tutoriels dans le back-office. | `False` | ⚪ |
 | `SF_SCHEME_DEPENDENT_SVGS` | Adapte les SVG au thème clair/sombre. | `False` | ⚪ |
+| `SF_NOINDEX` | Demande aux moteurs de recherche de ne rien indexer : ajoute l’en-tête `X-Robots-Tag: noindex, nofollow` à toutes les réponses servies par Django (pages, back-office, documents, `sitemap.xml`, statiques servis par WhiteNoise). Ne couvre pas les médias servis directement depuis un bucket S3. | `False` | ⚪ |
 | `WAGTAILDOCS_MAX_UPLOAD_SIZE` | Taille maximale des documents téléversés (en octets). | `10485760` (10 Mo) | ⚪ |
 | `DSFR_USE_INTEGRITY_CHECKSUMS` | Active les sommes de contrôle d’intégrité du DSFR (peut entrer en conflit avec WhiteNoise). | `False` | ⚪ |
 | `DSFR_MARK_OPTIONAL_FIELDS` | Marque les champs optionnels (plutôt que les champs obligatoires) dans les formulaires DSFR. | `True` | ⚪ |
